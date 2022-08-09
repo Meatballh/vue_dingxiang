@@ -1,0 +1,43 @@
+/* 初始化css样式 */
+h1,h2,h3,h4,h5,h6,div,body,ul,li,p{
+padding: 0;
+margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+ul li{
+    list-style: none;
+}
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+img{
+    border: 0;
+}
+
+
+/* 移动端布局 */
+/* html{
+    font-size: 13.33333333vw;
+}
+
+@media (min-width:750px){
+    html{
+        font-size: 100px;
+    }
+}
+body{
+    font-size: 14px;
+    font-family: '微软雅黑','Arial Narrow',Arial,sans-serif;
+    max-width: 750px;
+    margin: 0 auto;
+} */
