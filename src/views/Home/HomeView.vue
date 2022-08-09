@@ -35,6 +35,11 @@
     </ul>
     <!-- 全国数据统计 -->
     <CovNum :covNum='covNum' />
+    <!-- ECharts展示 -->
+    <!-- <ECharts/> -->
+
+    <!-- 国内疫情 -->
+    <ChildMap/>
   </div>
   
     
@@ -44,12 +49,16 @@
 import {getCovInfo} from '@/api/index.js'
 import CovInfo from './CovInfo/CovInfo.vue'
 import CovNum from './CovNum/CovNum.vue'
+import ChildMap from './ECharts/ChildMap.vue'
+import ECharts from './ECharts/ECharts.vue'
 
 export default {
   name: 'HomeView',
   components: {
     CovInfo,
-    CovNum
+    CovNum,
+    ChildMap,
+    ECharts
   },
   data() {
     return {

@@ -9,6 +9,10 @@ import '@/assets/js/phone.js'
 //引入vant
 import './plugins/vant'
 
+//导入echarts
+import echarts from './plugins/echarts'
+Vue.use(echarts)
+
 Vue.config.productionTip = false
 
 new Vue({
