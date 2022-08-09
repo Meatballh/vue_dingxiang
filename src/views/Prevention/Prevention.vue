@@ -2,8 +2,8 @@
   <div>
     防疫
     <van-tabs v-model="active" animated>
-      <van-tab v-for="index in 4" :title="'选项 ' + index" :key="index">
-        内容 {{ index }}
+      <van-tab v-for="(item,index) in arr" :title="item.title" :key="index">
+        {{ item.title }}
       </van-tab>
     </van-tabs>
   </div>
@@ -20,7 +20,15 @@ export default {
   // 定义属性
   data() {
     return {
-      active:0
+      active:0,
+      arr:[
+        {
+          title:'消毒剂'
+        },
+        {
+          title:'口罩'
+        }
+      ]
     }
   },
   // 计算属性，会监听依赖属性值随之变化
